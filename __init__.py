@@ -11,6 +11,8 @@ def flatten_mat(mat):
     inner_len = len(mat[0])
     for i in mat:
         if len(i) != inner_len:
-            raise ValueError("Each element of mat must be of same size, i.e. mat must be rectangular.")
+            raise ValueError(
+                "Each element of mat must be of same size, i.e. mat must be rectangular."
+            )
 
     return [j for i in mat for j in i]
