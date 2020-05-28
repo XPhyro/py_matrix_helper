@@ -22,8 +22,6 @@ def init_mat(h, w, v):
         raise TypeError("h must be an int.")
     if not isinstance(w, int):
         raise TypeError("w must be an int.")
-    if not isinstance(v, float):
-        raise TypeError("v must be a float.")
 
     if h <= 0:
         raise ValueError("h must be positive.")
